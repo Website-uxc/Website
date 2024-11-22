@@ -1,0 +1,36 @@
+/* <-- Header-Bereich --> */
+body {
+    margin: 0;
+}
+
+header {
+    height: 130px;
+    background-image: url(images/backgroundHeader.jpg);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    position: relative;
+    left: 73vw;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    transition: background-color 0.5s;
+    margin-right: 2.5vw;
+}
+
+/* <-- Hover-Effekt --> */
+header a:hover {
+    color: black;
+    background-color: rgb(150, 150, 150);
+}
