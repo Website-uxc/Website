@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a {
+    font-size: 70px;
+    color: red;
+    text-decoration: none;
+}
+header a:hover{
+    color:black;
+}
