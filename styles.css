@@ -6,7 +6,7 @@ body {
 header a {
     font-size: 70px;
     color: red;
-    text-decoration: none;
+    text-decoration: nonep;
 }
 header a:hover{
     color:black;
