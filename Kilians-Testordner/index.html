@@ -3,6 +3,44 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
         <meta charset="UTF-8">
         <title>Cognify AI</title>
+        <script>
+            // Definiere ein Array mit Sprüchen
+            const sprueche = [
+            "Sprich mit der Zukunft – Chatte mit unserer KI",
+            "Erlebe intelligente Gespräche – Deine KI wartet auf dich!",
+            "Hol dir Antworten in Echtzeit – Dein persönlicher KI-Chatbot",
+            "Lass uns plaudern! Chatte mit einer fortschrittlichen KI",
+            "Führe faszinierende Gespräche – Mit der KI, die immer lernt",
+            "Entdecke neue Möglichkeiten – Deine KI ist bereit!",
+            "Chatte intelligent – Mit einer KI, die immer mitdenkt",
+            "Bereit für einen spannenden Dialog? Deine KI wartet auf dich!",
+            "Echtzeit-Intelligenz für dich – Chatte jetzt mit der KI!",
+            "Unbegrenzte Gespräche – Deine KI steht dir zur Seite",
+            "Verborgene Geheimnisse entschlüsseln – Mit der KI als deinem Partner",
+            "Entdecke, was möglich ist – Künstliche Intelligenz, die dich versteht",
+            "Du hast Fragen, die KI hat Antworten – Lass uns sprechen!",
+            "Lass uns die Zukunft gestalten – Chatte mit einer intelligenten KI",
+            "Führe Gespräche, die dich weiterbringen – Mit deiner KI",
+            "Lass die KI deinen Tag bereichern – Intelligente Gespräche warten auf dich!",
+            "Sprich mit der neuesten Technologie – Deine KI ist hier!",
+            "Verwandle deine Gedanken in Erkenntnisse – Die KI hilft dir dabei",
+            "Der Schlüssel zur Zukunft? Deine KI – Starte jetzt das Gespräch!",
+            "Wissen in Echtzeit – Lerne von der fortschrittlichsten KI",
+            "Verschwende keine Zeit – Chatte jetzt mit einer intelligenten KI!"
+];
+
+    
+            // Funktion, um einen zufälligen Spruch auszuwählen
+            function getRandomSpruch() {
+                const randomIndex = Math.floor(Math.random() * sprueche.length);
+                return sprueche[randomIndex];
+            }
+    
+            // Sobald die Seite geladen wird, den zufälligen Spruch anzeigen
+            window.onload = function() {
+                document.getElementById("random_spruch").innerHTML = getRandomSpruch();
+            };
+        </script>
     </head>
     <body>
         <header>
@@ -10,5 +48,6 @@
             <a href="login.html">Login</a> 
             <a href="signup.html">Signup</a>
         </header>
+        <p id="random_spruch"></p>
     </body>
 </html>
