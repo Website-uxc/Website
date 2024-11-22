@@ -21,7 +21,6 @@
             "Du hast Fragen, die KI hat Antworten – Lass uns sprechen!",
             "Lass uns die Zukunft gestalten – Chatte mit einer intelligenten KI",
             "Führe Gespräche, die dich weiterbringen – Mit deiner KI",
-            "Lass die KI deinen Tag bereichern – Intelligente Gespräche warten auf dich!",
             "Sprich mit der neuesten Technologie – Deine KI ist hier!",
             "Verwandle deine Gedanken in Erkenntnisse – Die KI hilft dir dabei",
             "Der Schlüssel zur Zukunft? Deine KI – Starte jetzt das Gespräch!",
@@ -29,14 +28,11 @@
             "Verschwende keine Zeit – Chatte jetzt mit einer intelligenten KI!"
 ];
 
-    
-            // Funktion, um einen zufälligen Spruch auszuwählen
             function getRandomSpruch() {
                 const randomIndex = Math.floor(Math.random() * sprueche.length);
                 return sprueche[randomIndex];
             }
     
-            // Sobald die Seite geladen wird, den zufälligen Spruch anzeigen
             window.onload = function() {
                 document.getElementById("random_spruch").innerHTML = getRandomSpruch();
             };
@@ -45,8 +41,8 @@
     <body>
         <header>
             <img src="images/logo.png" alt="Logo von Cognify AI">
-            <a href="login.html">Login</a> 
-            <a href="signup.html">Signup</a>
+            <a href="login.html">Anmelden</a> 
+            <a href="signup.html">Registrieren</a>
         </header>
         <p id="random_spruch"></p>
     </body>

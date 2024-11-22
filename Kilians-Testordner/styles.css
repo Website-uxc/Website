@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family:good-times;
+    src:url(images/recharge\ bd.otf);
+}
 body {
     margin: 0;
 }
@@ -21,7 +24,7 @@ header a {
     color: black;
     font-size: 40px;
     position: relative;
-    left: 73vw;
+    left: 65vw;
     padding: 5px;
     border-radius: 15px;
     background-color: white;
@@ -32,4 +35,12 @@ header a {
 header a:hover {
     color: black;
     background-color: rgb(150, 150, 150);
+}
+#random_spruch {
+    font-size:2.2vw;
+    font-family:good-times;
+    position:relative;
+    text-align:center;
+    justify-content:flex-start;
+    top:30px;
 }
