@@ -2,11 +2,17 @@ body {
     margin:0;
 }
 header {
-    height:130px;
+    height:18vh;
     width:100%;
     background-color:lightblue;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
 }
 header a {
+    position:absolute;
+    left:80vw;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 5vh;
+    color:white;
 }
