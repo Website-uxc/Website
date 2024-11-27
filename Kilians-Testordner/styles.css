@@ -44,3 +44,9 @@ header a:hover {
     justify-content:flex-start;
     top:30px;
 }
+.float {
+    position:absolute;
+    left:50vw;
+    transform:translateX(-50%);
+    font-size:100px;
+}
