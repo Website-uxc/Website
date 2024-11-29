@@ -1,9 +1,10 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        <meta charset="UTF-8">
-        <title>Cognify AI</title>
-        <script>
+<!DOCTYPE html>
+    <html lang="de">
+        <head>
+            <link rel="stylesheet" href="styles.css" type="text/css">
+            <meta charset="UTF-8">
+            <title>Cognify AI</title>
+            <script>
             const sprueche = [
             "Sprich mit der Zukunft – Chatte mit unserer KI",
             "Erlebe intelligente Gespräche – Deine KI wartet auf dich!",
@@ -35,17 +36,21 @@
             window.onload = function() {
                 document.getElementById("random_spruch").innerHTML = getRandomSpruch();
             };
-        </script>
-    </head>
-    <body>
-        <header>
-            <img src="images/logo.png" alt="Logo von Cognify AI">
-            <div class="float">
-                <p>Test</p>
+            </script>
+        </head>
+        <body>
+            <div id="top"></div>
+            <header>
+                <img src="images/logo.png" alt="Logo von Cognify AI">
+                <div class="float">
+                    <p>Cognify AI</p>
+                </div>
+                <a href="login.html">Anmelden</a> 
+                <a href="signup.html">Registrieren</a>
+            </header>
+            <p id="random_spruch"></p>
+            <div class="class">
             </div>
-            <a href="login.html">Anmelden</a> 
-            <a href="signup.html">Registrieren</a>
-        </header>
-        <p id="random_spruch"></p>
-    </body>
+            <a href="#top" class="ScrollUp">↑</a>
+        </body>
 </html>
