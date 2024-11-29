@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Support - Cognify AI</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <style>
+            @media only screen and (min-width:1200px) {
+                body {
+                margin:0;
+                position:absolute;
+                }
+                header {
+                    height:130px;
+                    background-image:url(../images/backgroundHeader.jpg);
+                    display:flex;
+                    align-items:center;
+                }
+                header img {
+                    height: 100%;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+                .float {
+                    position:absolute;
+                    left:35vw;
+                    transform:translateX(-50%);
+                    font-size:70px;
+                    color:white;
+                }
+                header a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 40px;
+                    position: relative;
+                    left: 65vw;
+                    padding: 5px;
+                    border-radius: 15px;
+                    background-color: white;
+                    transition: background-color 0.5s;
+                    margin-right: 2.5vw;
+                    }
+                header a:hover {
+                    color: black;
+                    background-color: rgb(150, 150, 150);
+                }
+                #contact-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 50px 50vw;
+                transform:translateX(-50%);
+                padding: 20px;
+                background-color: rgb(223, 238, 243);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+            }
+
+            label {
+                font-size: 18px;
+                margin-bottom: 10px;
+                align-self: flex-start; /* Positioniert das Label links */
+            }
+
+            input[type="email"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            textarea {
+                resize: none; /* Verhindert das Größenänderung */
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+            #titleTop {
+                font-size:60px;
+                font-weight:bold;
+                display:flex;
+                position:absolute;
+                left:50vw;
+                top:8vh;
+                transform:translateY(-50%);
+                transform:translateX(-50%);
+            }
+            #belowTitleTop {
+                font-size:50px;
+                margin-left:23vw;
+                margin-top:75px;
+            }
+            #successMessage {
+                color:white;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="../images/logo.png" alt="Logo von Cognify AI">
+            <div class="float">
+                <p>Cognify AI</p>
+            </div>
+            <a href="../">Zurück zur Homepage</a>
+        </header>
+        <p id="titleTop">Sie haben ein Problem?</p>
+        <p id="belowTitleTop">Füllen Sie ganz einfach dieses Formluar aus!</p>
+        <form id="contact-form">
+            <label for="email">E-Mail-Adresse:</label><br>
+            <input type="email" id="email" name="email" required autocomplete="off"><br><br>
+    
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <button type="submit">Absenden</button>
+        </form>
+    
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("N3v28X-AbN2mG6xcp");
+            })();
+    
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                var templateParams = {
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                };
+    
+                emailjs.send("service-support-in", "template_avqnna8", templateParams)
+            });
+        </script>
+</html>

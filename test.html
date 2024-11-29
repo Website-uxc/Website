@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <h2>Kontaktformular</h2>
+    <form id="contact-form">
+        <label for="email">E-Mail-Adresse:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Absenden</button>
+    </form>
+
+    <script type="text/javascript">
+        // EmailJS initialisieren
+        (function() {
+            emailjs.init("N3v28X-AbN2mG6xcp"); // Hier deinen User ID einfügen
+        })();
+
+        // Formularabsendefunktion
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var templateParams = {
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
+
+            // Template an EmailJS senden
+            emailjs.send("service-support-in", "template_avqnna8", templateParams)
+                .then(function(response) {
+                    alert("Nachricht gesendet!");
+                }, function(error) {
+                    alert("Fehler beim Senden der Nachricht: " + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
+</html>

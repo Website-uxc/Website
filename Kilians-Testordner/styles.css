@@ -2,6 +2,7 @@
     font-family:good-times;
     src:url(images/recharge\ bd.otf);
 }
+@media only screen and (min-width:1200px) {
 html {
     scroll-behavior: smooth;
 }
@@ -55,7 +56,57 @@ header a:hover {
     color:white;
 }
 .ScrollUp {
-    display:flex;
+    transition: font-size 0.5s;
+    position:fixed;
+    left:91vw;
+    top:93vh;
+    font-size:40px;
+    padding:10px 45px;
+    border-radius:35px;
+    background-color:lightblue;
+    color:white;
+    text-decoration:none;
+    transform:translate(-50%);
+    transform:translateY(-50%);
+}
+.ScrollUp:hover {
+    color:rgb(179, 179, 179);
     font-size:50px;
+    transition: font-size 0.5s;
+}
+.supportIcon {
+    transition:width 0.5s;
+    width:50px;
+    position:fixed;
+    left:82vw;
+    top:93vh;
+    padding:6px 35px;
+    border-radius:35px;
+    background-color:lightblue;
+    text-decoration:none;
+    transform:translate(-50%);
+    transform:translateY(-50%);
+}
+.supportIcon:hover {
+    width:60px;
+    transition: width 0.5s;
+}
+.supportIcon {
+    transition: width 0.5s;
+    width: 50px;
+    position: fixed;
+    left: 82vw;
+    top: 93vh;
+    padding: 6px 35px;
+    border-radius: 35px;
+    background-color: lightblue;
+    text-decoration: none;
+    transform: translate(-50%);
+    transform: translateY(-50%);
+}
 
+.supportIcon:hover {
+    width: 60px;
+    transition: width 0.5s;
+}
 }
