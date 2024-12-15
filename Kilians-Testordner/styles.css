@@ -2,7 +2,7 @@
     font-family:good-times;
     src:url(images/recharge\ bd.otf);
 }
-@media only screen and (min-width:1200px) {
+/* @media only screen and (min-width:1200px) { */
 html {
     scroll-behavior: smooth;
 }
@@ -99,7 +99,7 @@ footer a:hover {
 }
 .starten {
     display: flex;
-    margin-top: 10vw;
+    margin-top: 7vw;
     margin-left: 38vw;
 }
 .starten a{
@@ -109,10 +109,25 @@ footer a:hover {
     border-radius: 15px;
     padding: 15px;
     font-size: 40px;
-    transition:padding 0.2s;
+    transition:padding 0.3s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .starten a:hover{
     color:white;
-    padding: 20px;
+    padding: 18px;
 }
+.relative{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
+.infos {
+   margin-top: 5vw;
+    width: 18%;
+    padding: 1vw;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5vw;
+  }
+
+/* } */
